@@ -436,6 +436,7 @@ var ReplyWithHeader = {
     let rawHdr = this.getMsgHeader(this.messageUri);
     let pHeader = this.parseMsgHeader(rawHdr);
     let headerQuotLblSeq = this.Prefs.headerQuotLblSeq;
+    let i18n = this.i18n;
 
     if (this.Prefs.useSenderDate) {
       let mimeDate = MimeHeaders(this.messageUri).get("Date");
@@ -1059,6 +1060,12 @@ var ReplyWithHeader = {
   },
 
 };
+
+Components.classes["@mozilla.org/moz/jssubscript-loader;1"]
+  .getService(Components.interfaces.mozIJSSubScriptLoader)
+  .loadSubScript(
+    "chrome://replyWithHeader/content/rwh-i18n.js",
+     ReplyWithHeader, "UTF-8");
 
 // RWH logger methods
 ReplyWithHeader.Log = {
