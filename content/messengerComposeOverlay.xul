@@ -13,6 +13,5 @@
     <script type="application/javascript" src="chrome://replywithheader/content/rwh.js"/>
     <script type="application/javascript" src="chrome://replywithheader/content/rwh-prefs.js"/>
     <script type="application/javascript" src="chrome://replywithheader/content/rwh-init.js"/>
-    <script type="application/javascript" src="chrome://replywithheader/content/rwh-i18n.js"/>
     <script type="application/javascript" src="resource://replywithheader/dateFormat.min.js"/>
 </overlay>
